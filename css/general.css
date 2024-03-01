@@ -41,6 +41,8 @@ Paragraph default: 1.6
 #555
 #333
 
+#030c27f5
+
 --- 05 SHADOWS
 
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -81,8 +83,12 @@ strong {
 
 .container {
     max-width: 114rem;
-    padding: 0 3.2rem;
+    /* padding: 0 3.2rem; */
     margin: 0 auto;
+}
+
+.img {
+    max-width: 100%;
 }
 
 
@@ -91,6 +97,7 @@ strong {
 .grid-2-column {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
 }
 
 .grid-3-column {
@@ -108,14 +115,20 @@ strong {
     grid-template-columns: repeat(5, 1fr);
 }
 
+.grid-6-column {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
 /* LINKS */
 
 a:link,
 a:visited {
-    color: #1e5252;
+    /* color: #1e5252; */
     display: inline-block;
     text-decoration: none;
     transition: all 0.3s;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -127,18 +140,55 @@ a:active {
 /* HEADINGS */
 
 .heading-primary {
-    color: #333;
-    font-weight: 600;
+    color: #030c27f5;
+    font-weight: 500;
     font-size: 6.8rem;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.1;
+}
+
+.heading-secondary {
+    color: #333;
+    font-size: 4.8rem;
+    font-weight: 500;
+    font-family: serif;
+}
+
+.how-header {
+    font-size: 2.4rem;
+    margin-bottom: 1.0rem;
 }
 
 
 /* HELPER CLASSES */
 
 .width-diff {
-    max-width: 25.6rem;
+    max-width: 45.0rem;
     align-items: center;
-    gap: 1rem;
+}
+
+.list-item-24 {
+    margin-bottom: 2.4rem;    
+}
+
+.community-margin-btm {
+    margin-bottom: 4.8rem;
+}
+
+
+
+/* LIST ITEMS */
+
+.how-list, .how-list-item {
+    list-style: none;
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.how-list p {
+    font-size: 2.0rem;
+}
+
+.how-list:last-child {
+    margin-bottom: 0;
 }

@@ -1,4 +1,7 @@
+
+/*********************************/
 /* ANNOUNCEMENT SECTION */
+/*********************************/
 
 .announcement {
     font-size: 1.2rem;
@@ -12,11 +15,24 @@
     text-transform: uppercase;
 }
 
+.announcement a:link,
+.announcement a:visited {
+    color: #2e9797;
+    font-weight: 500;
+}
 
+.announcement a:hover,
+.announcement a:active {
+    text-decoration: underline;
+}
+
+
+/*********************************/
 /* HEADER*/
+/*********************************/
 
 .header {
-    background-color: #125050;
+    background-color: #030c27f5;
     padding: 1.6rem 0;
 }
 
@@ -26,45 +42,58 @@
     gap: 3.2rem;
 }
 
-.languages {
+#languages {
     max-width: 11rem;
-    background-color: #125050;
+    background-color: #030c27f5;
     color: #fff;
     border: none;
     font-size: 1.4rem;
+    justify-self: end;
 }
 
 .link:link, 
 .link:visited {
-    color: #125050;
-    background-image: linear-gradient(to right, #fffd77, #ccc900);
-    font-size: 1.2rem;
-    padding: 1.2rem;
+    color: #333;
+    background-image: linear-gradient(to right, #f7c900, #cca807);
+    padding: 1.6rem 3.2rem;
     border-radius: 4px;
-} 
+    transition: all 0.3s;
+    margin-left: 0.8rem;
+}
 
-.open-link:link {
-    color: #fff;
+.link:hover, 
+.link:active {
+    text-decoration: none;
+}
+
+.open-link:link,
+.open-link:visited {
+    background: none;
+    color: #00bebe;
+    box-shadow: inset 0 0 0 2px #00bebe;
+}
+
+.open-link:hover, 
+.open-link:active {
+    text-decoration: underline;
 }
 
 
-
+/*********************************/
 /* TAG SECTION */
+/*********************************/
 
 .navigation {
     background-color: #f7f7f7;
-    padding: 1.6rem 0;
+    padding: 2.4rem 0;
+    font-family: serif;
 }
 
 .nav-list {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     list-style: none;
-    gap: 0rem;
 }
 
-/* .nav-list:hover {
-    padding-bottom: 1.6rem;
-} */
 
 .nav-list a:link,
 .nav-list a:visited {
@@ -76,16 +105,17 @@
 
 .nav-list a:hover,
 .nav-list a:active {
+    font-family: sans-serif;
     font-weight: 600;
 }
 
 
-
+/*******************/
 /* HERO SECTION */
-
+/*******************/
 
 .section-hero {
-    padding: 1.6rem 0;
+    padding: 0rem 0 6.4rem 0;
 }
 
 .hero {
@@ -93,33 +123,374 @@
     gap: 4.8rem;
 }
 
-.hero-description {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    margin: 2.4rem 0 1.2rem 0;
+.hero-text {
+    margin-bottom: 1.6rem;
 }
 
-.hero-img-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero-description {
+    color: #030c27f5;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin: 2.4rem 0 0 0;
+}
+
+.hero-closed-link a:hover,
+.hero-closed-link a:active {
+    color: #000;
+}
+
+.register .hero-closed-link {
+    margin-left: 0;
+    margin-right: 0.8rem;
 }
 
 .hero-img {
-    max-width: 100%;
+    max-width: 100%;   
 }
 
-.register a:link,
-.register a:link {
-    color: #0d3a3a;
-    background-image: linear-gradient(to right, #fffd77, #ccc900);
+.hero-closed-link a:link,
+.hero-closed-link a:link {
+    color: #333;
     font-size: 1.4rem;
     padding: 1.2rem 2.4rem;
     border-radius: 0.4rem;
 }
 
-.register a:hover,
-.register a:active {
-    background: #ccc900ab;
+
+
+/*********************/
+/* SECTION FREE */
+/*********************/
+
+.section-free {
+    padding: 6.4rem 0;
+    background-color: #fdfcf5;
+    padding: 3.2rem 0;
+    text-align: center;
 }
 
+.bracket-text {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.in-bracket-text {
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: serif;
+    font-weight: 500;
+}
+
+
+/*********************/
+/* SECTION HOW */
+/*********************/
+
+.section-how {
+    padding: 6.4rem 0;
+    background-color: #fdfcf5;
+}
+
+.section-how .grid-2-column {
+    align-items: center;
+}
+
+.description {
+    color: #555;
+    font-family: sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin: 1.2rem 0 2.4rem 0;
+}
+
+.how-list {
+    margin-bottom: 4.8rem;
+}
+
+.dot-list {
+    line-height: 1.3;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.learn-link:link,
+.learn-link:visited {
+    color: #05adad;
+    margin-left: 4.8rem;
+}
+
+.dot-icon {
+    font-size: 2.4rem;
+    color: #d3b52d;
+}
+
+
+/***********************/
+/* SECTION SHARE STORY */
+/***********************/
+
+.section-share-story {
+    padding: 6.4rem 0;
+}
+
+.section-share-story .grid-2-column {
+    align-items: center;
+}
+
+/***********************/
+/* SECTION EARN */
+/***********************/
+
+.section-earn {
+    background-color: #fdfcf5;
+    padding: 6.4rem 0;
+}
+
+.section-earn .grid-2-column {
+    align-items: center;
+}
+
+.Earning ul {
+    padding-top: 2.4rem;
+}
+
+/***********************/
+/* SECTION REVIEWS */
+/***********************/
+
+.section-reviews {
+    padding: 6.4rem 4.8rem;
+}
+
+.section-reviews .grid-2-column {
+    align-items: center;
+    gap: 4.8rem;
+    text-align: center;
+}
+
+
+.author-name {
+    font-size: 1.2rem;
+    font-family: serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.country-niche {
+    font-size: 1.2rem;
+    font-family: serif;
+    text-align: center;
+    padding: 1.0rem 0 2.4rem 0;
+}
+
+.author-description {
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 3.2rem;
+}
+
+.author-link {
+   color: #2e9797;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.author-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-img {
+    max-width: 60%;
+    margin-bottom: 2.4rem;
+}
+
+/***********************/
+/* SECTION NICHES */
+/***********************/
+
+.section-niches {
+    padding: 6.4rem 0;
+    background: linear-gradient(#fdfcf5, #fdfcf5);
+    background-size: contain;
+    background-position: center;
+}
+
+.niches .heading-secondary {
+    text-align: center;
+    padding: 2.4rem 0;
+}
+
+.niches-header {
+    margin-bottom: 1.6rem;
+}
+
+.niches {
+    row-gap: 3.2rem;
+    padding: 0 3.2rem;
+}
+
+.niche-items {
+    font-size: 1.6rem;
+    list-style: none;
+}
+
+/***********************/
+/* SECTION HEROLD*/
+/***********************/
+
+.author-contd {
+    padding: 6.4rem 0;
+    
+}
+
+.herold {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.author-herold {
+    max-width: 60%;
+    margin-bottom: 4.8rem;
+}
+
+.herold-link {
+    display: inline-block;
+    text-align: center;
+}
+
+/***********************/
+/* COMMUNITY SECTION*/
+/***********************/
+
+.section-community {
+    padding: 3.2rem 0;
+    text-align: center;
+}
+
+.community-container {
+    padding: 0 3.2rem;
+    align-items: center;
+}
+
+.community-header {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.community-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+}
+
+.kdp-connect {
+    font-size: 1.6rem;
+    border: 1px solid #2e9797;
+    padding: 1.2rem;
+    border-radius: 1.8rem;
+}
+
+/***********************/
+/* CTA SECTION*/
+/***********************/
+
+.section-cta {
+    padding: 1.2rem 0 0 0;
+    background-color: #eee;
+    display: grid;
+    justify-content: space-around;
+}
+
+.section-cta .container .grid-2-column {
+    align-items: center;
+    padding: 0 3.2rem;
+}
+
+.cta-img-link {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.cta-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9.6rem;
+}
+
+.cta-header {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.cta-img-box {
+    display: flex;
+    justify-content: end;
+}
+
+.cta-img {
+    max-width: 50%;
+}
+
+/***********************/
+/* FOOTER*/
+/***********************/
+
+.section-footer {
+    padding: 4.8rem 6.4rem;
+    color: #ffffffc2;
+    background-color: #030c27f5;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.footer-logo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-side-by-side {
+    gap: 3.2rem;
+    align-items: center;
+    margin-bottom: 3.2rem;
+}
+
+.footer-logo-icon {
+    align-self: start;
+}
+
+.conect {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+}
+
+.KDP-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+
+.footer-link-list {
+    gap: 3.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.footer-link {
+    color: #34c7c7;
+}
+
+.copyright {
+    text-align: center;
+}

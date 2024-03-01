@@ -6,16 +6,22 @@
     <link href="./css/general.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
     <link href="manifest.webmanifest" rel="stylesheet"/>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
     <title>Amazon Kindle Direct Publishing</title>
 </head>
 
 <body>
-    
-    <p class="announcement">
-        <strong>New!</strong>
-        Total KDP KU author earnings for December are $51.6 billion.
-        <a href="">Learn more</a>
-    </p>
+    <div class="announcement">
+        <p>
+            <strong>New!</strong>
+            Total KDP KU author earnings for December are $51.6 billion.
+            <a href="#">Learn more</a>
+        </p>
+    </div>
 
     <header class="header">
         <div class="container">
@@ -24,8 +30,8 @@
                     <img src="img/img_kdp_logo_1.png"
                     class="kdp-logo" alt="kdp-logo"/>
                 </a>
-    
-                <select class="languages">
+
+                <select id="languages">
                     <option value="English">English - US</option>
                     <option value="French">Francais</option>
                     <option value="Germany">Dutch</option>
@@ -33,14 +39,11 @@
                     <option value="Spanin">Espanyol</option>
                     <option value="Japan">Japon</option>
                 </select>
-    
+
                 <div class="register-kdp">
-
                         <a class="link open-link" href="#">Sign in</a>
-
                         <a class="link" href="https://kdp.amazon.com/signup">Join KDP</a>
                 </div>
-                
             </div>
         </div>
     </header>
@@ -66,35 +69,469 @@
 
 
     <main>
-
         <section class="section-hero">
             <div class="container grid-2-column hero">
 
                 <div class="hero-text-box">
-                    <h1 class="heading-primary">
-                        Welcome to Kindle Direct Publishing
-                    </h1>
-                    <p class="hero-description">
-                        Self-publish print and digital books, and reach millions 
-                        of readers around the world on Amazon.
-                    </p>
+                    <div class="hero-text">
+                        <h1 class="heading-primary">
+                            Welcome to Kindle Direct Publishing
+                        </h1>
+                        <p class="hero-description">
+                            Self-publish print and digital books, and reach millions 
+                            of readers around the world on Amazon.
+                        </p>
+                    </div>
 
                     <div class="register">
-                        <a href="#">Join KDP</a>
-                        <a class="open" href="#">Sign in</a>
+                        <a class="link hero-closed-link" href="#">Join KDP</a>
+                        <a class="link open-link" href="#">Sign in</a>
                     </div>
                 </div>
 
                 <div class="hero-img-box">
                     <img src="img/img_about_hero_quotes.png"
-                    class="hero-img" alt="image of a little 
+                    class="img" alt="image of a little 
                     girl looking into water"/>
                 </div>
 
             </div>
         </section>
 
+        <section class="section-free">
+            <div class="container">
+                <div class="grid-3-column bracket-text">
+                    <div class="bracket-img-box">
+                        <img class="bracket" src="img/BracketA.png"
+                        alt="open-bracket"/>
+                    </div>
+                    <div class="in-bracket-text-box">
+                        <p class="in-bracket-text">
+                            KDP provides you with free and simple tools to self-publish 
+                            your book in more than 10 countries in over 45 languages.
+                        </p>
+                    </div>
+                    <div class="bracket-img-box">
+                        <img class="bracket" src="img/BracketB.png"
+                        alt="close-bracket"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-how">
+            <div class="container grid-2-column">
+                <div class="how-img-box">
+                    <img src="img/img_bookCollect_USv1.png"
+                    class="img" alt="book-collection"/>
+                </div>
+
+                <div class="publishig-basics">
+                    <h2 class="heading-secondary">
+                        Be your own publisher
+                    </h2>
+                    <p class="description">
+                        KDP gives you control over your book's content, design, 
+                        price, audience, and advertising.
+                    </p>
+                    <ul class="how-list">
+                        <li class="how-list-item dot-list">
+                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <div>
+                                <h4 class="how-header">
+                                    Self-publish easily
+                                </h4>
+                                <p class="how-guide">
+                                    Publish print and digital formats in three simple 
+                                    steps, and see your book appear on Amazon stores 
+                                    around the world in 72 hours.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="how-list-item dot-list">
+                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <div>
+                                <h4 class="how-header">
+                                    Earn more
+                                </h4>
+                                <p class="how-guide">
+                                    Earn up to 70% royalty and offer your eBook 
+                                    on Kindle Unlimited by enrolling in KDP Select.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="how-list-item dot-list how-list-item-24">
+                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <div>
+                                <h4 class="how-header">
+                                    Keep control
+                                </h4>
+                                <p class="how-guide">
+                                    Retain ownership of your content, publish on your 
+                                    schedule, and set your own list prices.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="register">
+                        <a class="link hero-closed-link" href="#">Join KDP</a>
+                        <a class="learn-link" href="#">Learn how to publish</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-share-story">
+            <div class="container grid-2-column">
+                <div class="share">
+                    <h2 class="heading-secondary">
+                        Share your story
+                    </h2>
+                    <p class="description">
+                        Publish in different formats to reach 
+                        more readers in their preferred way to read.
+                    </p>
+    
+                    <ul class="how-list">
+                        <li class="how-list-item dot-list">
+                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <div>
+                                <h4 class="how-header">
+                                    eBooks
+                                </h4>
+                                <p class="how-guide">
+                                    Upload your manuscript and distribute your 
+                                    eBook in Kindle Stores around the world. 
+                                    Reach even more readers with Kindle Unlimited.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="how-list-item dot-list">
+                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <div>
+                                <h4 class="how-header">
+                                    Print books
+                                </h4>
+                                <p class="how-guide">
+                                    Bring your book to life in paperback 
+                                    and hardcover formats. KDP will print 
+                                    your books on demand and ship them to 
+                                    customers around the world.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="how-list-item dot-list">
+                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <div>
+                                <h4 class="how-header">
+                                    Kindle Vella
+                                </h4>
+                                <p class="how-guide">
+                                    Publish serialized stories, one short 
+                                    episode at a time. Available to US-based 
+                                    authors to publish in English. Visit 
+                                    Kindle Vella site
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <img src="img/img_formats_US_v2.png"
+                class="img" alt="book-formats"/>
+        
+            </div>
+        </section>
+
+        <section class="section-earn">
+            <div class="container grid-2-column">
+                <img src="img/img_formats_v2.png"
+                class="img" alt="earning-with-diff-formats"/>
+                
+                <div class="Earning">
+                    <div class="earning-basics">
+                        <h2 class="heading-secondary">
+                            Earn more with Kindle Direct Publishing
+                        </h2>
+                        <ul class="how-list">
+                            <li class="how-list-item dot-list">
+                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                                <div>
+                                    <h4 class="how-header">
+                                        Get paid for each page read with Kindle Unlimited
+                                    </h4>
+                                    <p class="how-guide">
+                                        Earn royalties for each page read on Kindle 
+                                        Unlimited when you enroll your book in KDP Select.
+                                    </p>
+                                    <a href="https://kdp.amazon.com/en_US/help/topic/G201541130">
+                                        Learn about Kindle Unlimited 
+                                    </a>
+                                </li>
+                                </div>
+                            <li class="how-list-item dot-list">
+                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                                <div>
+                                    <h4 class="how-header">
+                                        Earn up to 70% on eBooks
+                                    </h4>
+                                    <p class="how-guide">
+                                        Choose between two royalty options (70% or 35%) 
+                                        depending on your eBook content and which countries 
+                                        it’s sold.
+                                    </p>
+                                    <a href="https://kdp.amazon.com/en_US/help/topic/G200644210">
+                                        Learn about eBook royalties 
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="how-list-item dot-list">
+                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                                <div>
+                                    <h4 class="how-header">
+                                        Earn up to 60% on print books
+                                    </h4>
+                                    <p class="how-guide">
+                                        Earn up to 60% royalty on paperback 
+                                        and hardcover books sold through KDP.
+                                    </p>
+                                    <p>
+                                        <a href="https://kdp.amazon.com/en_US/help/topic/G201834330">
+                                            Learn more about paperback royalties
+                                        </a>  and 
+                                        <a href="https://kdp.amazon.com/en_US/help/topic/G77F3WPD3KQLJTFS">hardcover royalties</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="how-list-item dot-list">
+                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                                <div>
+                                    <h4 class="how-header">
+                                        Earn up to 50% on Kindle Vella
+                                    </h4>
+                                    <p class="how-guide">
+                                        Get 50% of what readers spend on tokens used to unlock 
+                                        your story’s episodes. You're also eligible for a 
+                                        bonus based on customer activity and engagement. 
+                                        (Only available for US-based authors in English)
+                                    </p>
+                                    <a href="https://kdp.amazon.com/en_US/help/topic/G5TFR9WSHB46ZKFN">
+                                        Learn about Kindle Vella royalties  
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>     
+                </div>
+            </div>
+        </section>
+
+        <section class="section-reviews">
+            <div class="container grid-2-column">
+                <figure class=" author-review author-malley">
+
+                    <div class="author-malley">
+                        <div class="author-img-box">
+                            <img src="img/img_author_TriciaOMalley_v1.png"
+                            class="author-img" alt="image of amazon authors"/>
+                        </div>
+                        <h2 class="author-name">
+                            Tricia O'Malley
+                        </h2>
+                        <p class="country-niche">
+                            USA / Romance
+                        </p>
+                        <blockquote class="author-description">
+                            "Self-publishing through KDP and Amazon has 
+                            changed my life. My books have made it to the New 
+                            York Times, USA Today, and Wall Street Journal bestseller lists.”
+                        </blockquote>
+                        <a class="author-link" href="https://www.amazon.com/stores/Tricia-OMalley/author/B00CWJNQHQ">
+                            Visit Tricia O'Malley's author page
+                        </a>
+                    </div>
+                </figure>
+                <figure class="author-review author-Macedo">
+
+                    <div class="author-img-box">
+                        <img src="img/img_author_JessicaMacedo_v1.png"
+                        class="author-img" alt="image of amazon authors"/>
+                    </div>
+                    <figcaption class="author-info">
+                        <h2 class="author-name">
+                            Jessica Macedo
+                        </h2>
+                        <p class="country-niche">
+                            Brazil / Fantasy
+                        </p>
+                        <blockquote class="author-description">
+                            “I always dreamed of living off books, but it was something that 
+                            seemed unattainable until I discovered Amazon KDP. With KDP, 
+                            I gained readers in my country and even around the world.“
+                        </blockquote>
+                        <a class="author-link" href="https://www.amazon.com/stores/J%C3%A9ssica-Macedo/author/B07FVVRC1X">
+                            Visit Jessica Macedo's author page
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+
+        <section class="section-niches">
+            <div class="container niches">
+                <h2 class="heading-secondary niches-header">
+                    Publish multiple types of books
+                </h2>
+
+                <ul class="niches grid-4-column">
+                    <li class="niche-items">Business and investing</li>
+                    <li class="niche-items">Children Books</li>
+                    <li class="niche-items">Non-fiction</li>
+                    <li class="niche-items">Literature and fiction</li>
+                    <li class="niche-items">Mystery, Thriller and Suspense</li>
+                    <li class="niche-items">Science, Fiction and Fantasy</li>
+                    <li class="niche-items">Teens and Young adult</li>
+                    <li class="niche-items">Comics and Graphic Novels</li>
+                    <li class="niche-items">Biography</li>
+                    <li class="niche-items">Romance</li>
+                    <li class="niche-items">Short Stories</li>
+                    <li class="niche-items">...and more</li>
+                </ul>
+            </div>
+        </section>
+            
+        <section class="author-contd">
+            <div class="container herold">
+                <figure class="container author-herold">
+                    <div class="author-img-box">
+                        <img src="img/img_author_HalElrod.png"
+                        class="author-img author-herold" alt="image of amazon authors"/>
+                    </div>
+                    <figcaption class="author-info">
+                        <h2 class="author-name">
+                            Hal Elrod
+                        </h2>
+                        <p class="country-niche">
+                            USA / Business & Money
+                        </p>
+                        <blockquote class="author-description">
+                            "I've sold over 2 million copies of my book, The Miracle Morning, 
+                            since publishing with KDP in 2012. It is one of the best decisions 
+                            I've ever made, as it has enabled me to impact millions of lives while 
+                            providing financial security for my family."
+                        </blockquote>
+                        <a class="author-link herold-link" href=" https://www.amazon.com/stores/Hal-Elrod/author/B008J6VH8G">
+                            Visit Hal Elrod's author page
+                        </a>
+                    </figcaption>
+            </div>
+        </section>
+
+
+
+        <section class="section-community">
+            <div class="container community-container community-margin-btm">
+                <h2 class="heading-secondary community-header">
+                    Join our community of authors
+                </h2>
+                <p class="community-description">
+                    Have a question about your account or how to market your book? 
+                    Ask for help from fellow publishers or lend a hand to someone new.
+                </p>
+                <a class="kdp-connect" href="https://www.kdpcommunity.com/">
+                    Connect with experts and fellow authors
+                </a>
+            </div>
+        </section>
+
+        <section class="section-cta">
+            <div class="container">
+                <div class="grid-2-column">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary cta-header">
+                            Ready to publish yuor book?
+                        </h2>
+                    </div>
+                    
+                    <div class="cta-img-link">
+                        <a class="link cta-link" href="https://kdp.amazon.com/signup">Join KDP</a>
+                        <img src="img/img_stickman_dark.png"
+                        class="cta-img" alt="stickman-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer></footer>
+
+    <footer class="section-footer">
+        <div class="container container-padding">
+            <div class="grid-3-column footer-side-by-side">
+                <div class="footer-logo-icon">
+                    <div class="footer-img">
+                        <img src="img/img_kdp_logo_1.png"
+                        alt="amazon-logo" class="img"/>
+                    </div>
+                    <div class="social-icons grid-2-column">
+
+                    </div>
+                </div>
+                <div class="conect">
+                    <div class="KDP-info">
+                        <div>
+                            <a class="footer-link"  href="https://kdp.amazon.com/en_US/select?ref_=FOOT_kdps">KDP Select</a>
+                            <p class="select-description">
+                                Earn more money and reach new readers 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="KDP-info">
+                        <div>
+                            <a class="footer-link" href="https://www.kdpcommunity.com/">KDP Community</a>
+                            <p class="select-description">
+                                Connect with experts and fellow authors  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conect">
+                    <div class="KDP-info">
+                        <div>
+                            <a class="footer-link" href="https://kdp.amazon.com/en_US/help/topic/GSJULX3WGP36HQ3R">CreatSpace</a>
+                            <p class="select-description">
+                                Link your existing account to KDP  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="KDP-info">
+                        <div>
+                            <a class="footer-link" href="https://kdp.amazon.com/en_US/help/topic/G201014330">Audiobook Creation Exchange (ACX)</a>
+                            <p class="select-description">
+                                Indie audiobook publishing made easy  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-6-column footer-link-list">
+                <a class="footer-link" href=": https://kdp.amazon.com/en_US/help/topic/G200627430">Terms and conditions</a>
+                <a class="footer-link" href="https://kdp.amazon.com/en_US/help/topic/G201488490">Privacy note</a>
+                <a class="footer-link" href="https://www.amazon.com/gp/help/customer/display.html/ref=footer_cou?ie=UTF8&nodeId=508088">Conditions of use</a>
+                <a class="footer-link" href="https://kdp.amazon.com/en_US/help">Help</a>
+                <a class="footer-link" href="https://www.amazon.jobs/en/teams/author-publisher-experience">Join our team</a>
+                <a class="footer-link" href="https://kdp.amazon.co.jp/">KSP Japan</a>
+            </div>
+
+            <div class="copyright">
+                &:copy 1996-2023, Amazon.com, Inc. or its affiliates. All Rights Reserved. Amazon and Kindle 
+                are trademarks of Amazon.com Inc. or its affiliates.
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>
