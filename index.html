@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/general.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
+    <link href="./css/query.css" rel="stylesheet"/>
     <link href="manifest.webmanifest" rel="stylesheet"/>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -24,7 +25,7 @@
     </div>
 
     <header class="header">
-        <div class="container">
+        <div class="container equal-width">
             <div class="header-content grid-3-column">
                 <a>
                     <img src="img/img_kdp_logo_1.png"
@@ -44,12 +45,18 @@
                         <a class="link open-link" href="#">Sign in</a>
                         <a class="link" href="https://kdp.amazon.com/signup">Join KDP</a>
                 </div>
+
+                <button class="btn-mobile-nav">
+                    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+                  </button>
+
             </div>
         </div>
     </header>
 
-    <section class="navigation">
-        <div class="container">
+    <section class="navigation open-navigation">
+        <div class="container equal-width">
             <ul class="grid-4-column width-diff">
                 <li class="nav-list">
                     <a href="#" class="about">About KDP</a>
@@ -70,7 +77,7 @@
 
     <main>
         <section class="section-hero">
-            <div class="container grid-2-column hero">
+            <div class="container grid-2-column hero equal-width">
 
                 <div class="hero-text-box">
                     <div class="hero-text">
@@ -91,7 +98,7 @@
 
                 <div class="hero-img-box">
                     <img src="img/img_about_hero_quotes.png"
-                    class="img" alt="image of a little 
+                    class="img hero-img" alt="image of a little 
                     girl looking into water"/>
                 </div>
 
@@ -122,7 +129,7 @@
         <section class="section-how">
             <div class="container grid-2-column">
                 <div class="how-img-box">
-                    <img src="img/img_bookCollect_USv1.png"
+                    <img src="img/img_bookCollection.png"
                     class="img" alt="book-collection"/>
                 </div>
 
@@ -136,7 +143,7 @@
                     </p>
                     <ul class="how-list">
                         <li class="how-list-item dot-list">
-                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
                             <div>
                                 <h4 class="how-header">
                                     Self-publish easily
@@ -149,7 +156,7 @@
                             </div>
                         </li>
                         <li class="how-list-item dot-list">
-                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
                             <div>
                                 <h4 class="how-header">
                                     Earn more
@@ -161,7 +168,7 @@
                             </div>
                         </li>
                         <li class="how-list-item dot-list how-list-item-24">
-                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
                             <div>
                                 <h4 class="how-header">
                                     Keep control
@@ -195,7 +202,7 @@
     
                     <ul class="how-list">
                         <li class="how-list-item dot-list">
-                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
                             <div>
                                 <h4 class="how-header">
                                     eBooks
@@ -208,7 +215,7 @@
                             </div>
                         </li>
                         <li class="how-list-item dot-list">
-                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
                             <div>
                                 <h4 class="how-header">
                                     Print books
@@ -222,7 +229,7 @@
                             </div>
                         </li>
                         <li class="how-list-item dot-list">
-                            <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                            <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
                             <div>
                                 <h4 class="how-header">
                                     Kindle Vella
@@ -254,14 +261,16 @@
                         <h2 class="heading-secondary">
                             Earn more with Kindle Direct Publishing
                         </h2>
+
                         <ul class="how-list">
+
                             <li class="how-list-item dot-list">
-                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
+                                <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
                                 <div>
                                     <h4 class="how-header">
                                         Get paid for each page read with Kindle Unlimited
                                     </h4>
-                                    <p class="how-guide">
+                                    <p class="how-guide how-guide-link">
                                         Earn royalties for each page read on Kindle 
                                         Unlimited when you enroll your book in KDP Select.
                                     </p>
@@ -269,59 +278,63 @@
                                         Learn about Kindle Unlimited 
                                     </a>
                                 </li>
-                                </div>
-                            <li class="how-list-item dot-list">
-                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
-                                <div>
-                                    <h4 class="how-header">
-                                        Earn up to 70% on eBooks
-                                    </h4>
-                                    <p class="how-guide">
-                                        Choose between two royalty options (70% or 35%) 
-                                        depending on your eBook content and which countries 
-                                        it’s sold.
-                                    </p>
-                                    <a href="https://kdp.amazon.com/en_US/help/topic/G200644210">
-                                        Learn about eBook royalties 
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="how-list-item dot-list">
-                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
-                                <div>
-                                    <h4 class="how-header">
-                                        Earn up to 60% on print books
-                                    </h4>
-                                    <p class="how-guide">
-                                        Earn up to 60% royalty on paperback 
-                                        and hardcover books sold through KDP.
-                                    </p>
-                                    <p>
-                                        <a href="https://kdp.amazon.com/en_US/help/topic/G201834330">
-                                            Learn more about paperback royalties
-                                        </a>  and 
-                                        <a href="https://kdp.amazon.com/en_US/help/topic/G77F3WPD3KQLJTFS">hardcover royalties</a>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="how-list-item dot-list">
-                                <ion-icon class="dot-icon" name="ellipse"></ion-icon>
-                                <div>
-                                    <h4 class="how-header">
-                                        Earn up to 50% on Kindle Vella
-                                    </h4>
-                                    <p class="how-guide">
-                                        Get 50% of what readers spend on tokens used to unlock 
-                                        your story’s episodes. You're also eligible for a 
-                                        bonus based on customer activity and engagement. 
-                                        (Only available for US-based authors in English)
-                                    </p>
-                                    <a href="https://kdp.amazon.com/en_US/help/topic/G5TFR9WSHB46ZKFN">
-                                        Learn about Kindle Vella royalties  
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>     
+
+                                <li class="how-list-item dot-list">
+                                    <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
+                                    <div>
+                                        <h4 class="how-header">
+                                            Earn up to 70% on eBooks
+                                        </h4>
+                                        <p class="how-guide how-guide-link">
+                                            Choose between two royalty options (70% or 35%) 
+                                            depending on your eBook content and which countries 
+                                            it’s sold.
+                                        </p>
+                                        <a href="https://kdp.amazon.com/en_US/help/topic/G200644210">
+                                            Learn about eBook royalties 
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="how-list-item dot-list">
+                                    <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
+                                    <div>
+                                        <h4 class="how-header">
+                                            Earn up to 60% on print books
+                                        </h4>
+                                        <p class="how-guide how-guide-link">
+                                            Earn up to 60% royalty on paperback 
+                                            and hardcover books sold through KDP.
+                                        </p>
+                                        <p>
+                                            <a href="https://kdp.amazon.com/en_US/help/topic/G201834330">
+                                                Learn more about paperback royalties
+                                            </a>  and 
+                                            <a href="https://kdp.amazon.com/en_US/help/topic/G77F3WPD3KQLJTFS">hardcover royalties</a>
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="how-list-item dot-list">
+                                    <img class="bullet-point" src="img/dot.png" alt="bullet-points"/>
+                                    <div>
+                                        <h4 class="how-header">
+                                            Earn up to 50% on Kindle Vella
+                                        </h4>
+                                        <p class="how-guide how-guide-link">
+                                            Get 50% of what readers spend on tokens used to unlock 
+                                            your story’s episodes. You're also eligible for a 
+                                            bonus based on customer activity and engagement. 
+                                            (Only available for US-based authors in English)
+                                        </p>
+                                        <a href="https://kdp.amazon.com/en_US/help/topic/G5TFR9WSHB46ZKFN">
+                                            Learn about Kindle Vella royalties  
+                                        </a>
+                                    </div>
+                                </li>
+
+                        </ul>
+                    </div>        
                 </div>
             </div>
         </section>
@@ -380,7 +393,7 @@
 
 
         <section class="section-niches">
-            <div class="container niches">
+            <div class="container">
                 <h2 class="heading-secondary niches-header">
                     Publish multiple types of books
                 </h2>
@@ -451,7 +464,7 @@
                 <div class="grid-2-column">
                     <div class="cta-text-box">
                         <h2 class="heading-secondary cta-header">
-                            Ready to publish yuor book?
+                            Ready to publish your book?
                         </h2>
                     </div>
                     
@@ -527,7 +540,7 @@
             </div>
 
             <div class="copyright">
-                &:copy 1996-2023, Amazon.com, Inc. or its affiliates. All Rights Reserved. Amazon and Kindle 
+                &copy; 1996-2026, Amazon.com, Inc. or its affiliates. All Rights Reserved. Amazon and Kindle 
                 are trademarks of Amazon.com Inc. or its affiliates.
             </div>
         </div>
