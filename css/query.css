@@ -11,10 +11,7 @@
         max-width: 100%;
     }
 
-    .container {
-        max-width: 160rem;
-        margin: 0 auto;
-    }
+
 }
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
